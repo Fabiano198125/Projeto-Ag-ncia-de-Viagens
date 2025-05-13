@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://i.postimg.cc/LXkGGm9H/favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+</head>
+<body id="top">
+    <header class="header" data-header>
+        <div class="overlay " data-overlay></div>
+
+        <div class="header-top">
+            <div class="container">
+                <a href="tel:+551212121212" class="helpline-box">
+                    <div class="icon-box">
+                        <ion-icon name="call-outline"></ion-icon>
+                    </div>
+
+                    <div class="wrapper">
+                        <p class="helpline-title">Para mais informações: </p>
+                        <p class="helpline-number">+55 (12) 12121212</p>
+                    </div>
+                </a>
+
+                <a href="#" class="logo">
+                    <img src="https://i.postimg.cc/zvgHq2QX/logo.png" alt="Tourly Logo">
+                </a>
+
+                <div class="header-btn-group">
+                    <button class="search-btn" aria-label="Search">
+                        <ion-icon name="search"></ion-icon>
+                    </button>
+
+                    <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
+                        <ion-icon name="menu-outline"></ion-icon>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-bottom">
+            <div class="container">
+                <ul class="social-list">
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-youtube"></ion-icon>
+                        </a>
+                    </li>
+                </ul>
+
+                <nav class="navbar " data-navbar>
+                    <div class="navbar-top">
+                        <a href="#" class="logo">
+                            <img src="https://i.postimg.cc/hvcfT8PK/logo-blue.png" alt="Tourly Logo">
+                        </a>
+
+                        <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
+                            <ion-icon name="close-outline"></ion-icon>
+                        </button>
+                    </div>
+
+                    <ul class="navbar-list">
+                        <li><a href="#home" class="navbar-link" data-nav-link>lar</a></li>
+                        <li><a href="#" class="navbar-link" data-nav-link>sobre nós</a></li>
+                        <li><a href="#destination" class="navbar-link" data-nav-link>destinos</a></li>
+                        <li><a href="#package" class="navbar-link" data-nav-link>pacotes</a></li>
+                        <li><a href="#gallery" class="navbar-link" data-nav-link>galeria</a></li>
+                        <li><a href="#contact" class="navbar-link" data-nav-link>contato</a></li>
+                    </ul>
+                </nav>
+
+                <button class="btn btn-primary">reserve agora</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <article>
+            <section class="hero" id="home">
+                <div class="container">
+                    <h2 class="h1 hero-title">jornada para explorar o mundo</h2>
+
+                    <p class="hero-text">Seu passaporte para a aventura está à sua espera! Embarque em uma jornada para explorar o mundo, onde cada passo revela uma nova história. Descubra experiências incríveis, abrace culturas diversas e crie memórias que durarão para sempre.</p>
+
+                    <div class="btn-group">
+                        <button class="btn btn-primary">saber mais</button>
+                        <button class="btn btn-secondary">reserve agora</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="tour-search">
+                <div class="container">
+                    <form action="" class="tour-search-form">
+                        <div class="input-wrapper">
+                            <label for="destino" class="input-label">Pesquisar Destino</label>
+                            <input type="text" name="destino" id="destino" required placeholder="digite o destino" class="input-field">
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="people" class="input-label">Número de pessoas</label>
+                            <input type="numero" name="pessoas" id="pessoas" required placeholder="digite o numero de pessoas" class="input-field">
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="check-in" class="input-label">Data de check-in</label>
+                            <input type="date" name="check-in" id="check-in" required class="input-field">
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="check-out" class="input-label">Data de check-out</label>
+                            <input type="date" name="check-out" id="check-out" required class="input-field">
+                        </div>
+
+                        <button type="submit" class="btn btn-secondary">pergunte agora</button>
+                    </form>
+                </div>
+            </section>
+
+            <section class="popular" id="destination">
+                <div class="container">
+                    <p class="section-subtitle">descobrir lugares</p>
+
+                    <h2 class="h2 section-title">destinos populares</h2>
+
+                    <p class="section-text">O mundo é uma tapeçaria de paisagens de tirar o fôlego, culturas vibrantes e histórias inéditas. Saia da sua zona de conforto, desafie suas perspectivas e abrace o desconhecido.</p>
+
+                    <ul class="popular-list">
+                        <li>
+                            <div class="popular-card">
+                                <figure class="card-img">
+                                    <img src="https://i.postimg.cc/fRNkQ8MC/popular-1.jpg" alt="San Miguel, ITÁLIA" loading="lazy">
+                                </figure>
+
+                                <div class="card-content">
+                                    <div class="card-rating">
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+
+                                    </div>
+                                    
+                                    <p class="card-subtitle"><a href="#">itália</a></p>
+                                    <h3 class="h3 card-title"><a href="#">San Miguel</a></h3>
+                                    <p class="card-text">Embarque em uma das ilhas da Lagoa de Veneza, conhecida como um lugar de paz e lembrança</p>
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="popular-card">
+                                <figure class="card-img">
+                                    <img src="https://i.postimg.cc/Nj9DZffm/popular-2.jpg" alt="Burj Khalifa, Dubai" loading="lazy">
+                                </figure>
+
+                                <div class="card-content">
+                                    <div class="card-rating">
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                    </div>
+
+                                    <p class="card-subtitle"><a href="#">Dubai</a></p>
+                                    <h3 class="h3 card-title"><a href="#">Burj Khalifa</a></h3>
+                                    <p class="card-text">Descubra o icônico arranha-céu em Dubai, que detém o título de edifício mais alto do mundo</p>
+                                </div>
+                                
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="popular-card">
+                                <figure class="card-img">
+                                    <img src="https://i.postimg.cc/Hkwcrf6F/popular-3.jpg" alt="TEMPLO DE KYOTO, JAPÃO" loading="lazy">
+                                </figure>
+
+                                <div class="card-content">
+                                    <div class="card-rating">
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                    </div>
+
+                                    <p class="card-subtitle"><a href="#">japão</a></p>
+                                    <h3 class="h3 card-title"><a href="#">tempo de kyoto</a></h3>
+                                    <p class="card-text">Descubra as histórias e características únicas dos templos deslumbrantes ao redor de Kyoto</p>
+                                </div>
+        
+                            </div>
+                        </li>
+                    </ul>
+
+                    <button class="btn btn-primary">MAIS DESTINOS</button>
+                </div>
+            </section>
+
+            <section class="package" id="package">
+                <div class="container">
+                    <p class="section-subtitle">Pacotes populares</p>
+                    <h2 class="h2 section-title">Confira nossos pacotes</h2>
+                    <p class="section-text">Veja o que todo mundo está falando! Mergulhe em nossa coleção de Pacotes Populares</p>
+
+                    <ul class="package-list">
+                        <li>
+                            <div class="package-card">
+                                <figure class="card-banner">
+                                    <img src="https://i.postimg.cc/kMytXrhZ/packege-1.jpg" alt="Experience the great holiday on beach" loading="lazy">
+                                </figure>
+
+                                <div class="card-content">
+                                    <h3 class="h3 card-title">Experimente umas férias fantásticas na praia</h3>
+
+                                    <p class="card-text">Águas azul-turquesa, areias douradas e puro relaxamento. Viva as férias de praia dos seus sonhos.</p>
+
+                                    <ul class="card-meta-list">
+                                        <li class="card-meta-item">
+                                            <div class="meta-box">
+                                                <ion-icon name="time"></ion-icon>
+
+                                                <p class="text">7D / 6N</p>
+                                            </div>
+                                        </li>
+
+                                        <li class="card-meta-item">
+                                            <div class="meta-box">
+                                                <ion-icon name="people"></ion-icon>
+
+                                                <p class="text">Max People: 10</p>
+                                            </div>
+                                        </li>
+
+                                        <li class="card-meta-item">
+                                            <div class="meta-box">
+                                                <ion-icon name="location"></ion-icon>
+
+                                                <p class="text">Malaysia</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+
+                                </div>
+
+                                <div class="card-price">
+                                    <div class="wrapper">
+                                        <p class="reviews">(25 Reviews)</p>
+
+                                        <div class="card-rating">
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                        </div>
+                                    </div>
+
+                                    <p class="price">$1025 <span>/per person</span></p>
+                                    <button class="btn btn-secondary">Book Now</button>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="package-card">
+                                <figure class="card-banner">
+                                    <img src="https://i.postimg.cc/5ySDr51P/packege-2.jpg" alt="Summer Holiday to the Oxolotan River" loading="lazy">
+                                </figure>
+
+                                <div class="card-content">
+                                    <h3 class="h3 card-title">Férias de verão no rio Oxolotan</h3>
+
+                                    <p class="card-text">Descubra águas esmeraldas, florestas tropicais exuberantes e a vida vibrante do Rio Oxolotan</p>
+
+                                    <ul class="card-meta-list">
+                                        <li class="card-meta-item">
+                                            <div class="meta-box">
+                                                <ion-icon name="time"></ion-icon>
+
+                                                <p class="text">7D / 6N</p>
+                                            </div>
+                                        </li>
+
+                                        <li class="card-meta-item">
+                                            <div class="meta-box">
+                                                <ion-icon name="people"></ion-icon>
+
+                                                <p class="text">Max People: 10</p>
+                                            </div>
+                                        </li>
+
+                                        <li class="card-meta-item">
+                                            <div class="meta-box">
+                                                <ion-icon name="location"></ion-icon>
+
+                                                <p class="text">Mexico</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+
+                                </div>
+
+                                <div class="card-price">
+                                    <div class="wrapper">
+                                        <p class="reviews">(20 Reviews)</p>
+
+                                        <div class="card-rating">
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                        </div>
+                                    </div>
+
+                                    <p class="price">$1325<span>/per person</span></p>
+                                    <button class="btn btn-secondary">Book Now</button>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="package-card">
+                                <figure class="card-banner">
+                                    <img src="https://i.postimg.cc/Y9WJkKNy/packege-3.jpg" loading="lazy">
+                                </figure>
+
+                                <div class="card-content">
+                                    <h3 class="h3 card-title">Férias de fim de semana na Ilha de Santorini</h3>
+
+                                    <p class="card-text">Descubra aldeias caiadas de branco, que descem em cascata por penhascos vulcânicos, com vista para o infinito azul do Mar Egeu.</p>
+
+                                    <ul class="card-meta-list">
+                                        <li class="card-meta-item">
+                                            <div class="meta-box">
+                                                <ion-icon name="time"></ion-icon>
+
+                                                <p class="text">7d / 6N</p>
+                                            </div>
+                                        </li>
+
+                                        <li class="card-meta-item">
+                                            <div class="meta-box">
+                                                <ion-icon name="people"></ion-icon>
+
+                                                <p class="text">Max People: 10</p>
+                                            </div>
+                                        </li>
+
+                                        <li class="card-meta-item">
+                                            <div class="meta-box">
+                                                <ion-icon name="location"></ion-icon>
+
+                                                <p class="text">Greece</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+
+                                </div>
+
+                                <div class="card-price">
+                                    <div class="wrapper">
+                                        <p class="reviews">(40 Reviews)</p>
+
+                                        <div class="card-rating">
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                            <ion-icon name="star"></ion-icon>
+                                        </div>
+                                    </div>
+
+                                    <p class="price">$2200<span>/per person</span></p>
+                                    <button class="btn btn-secondary">Book Now</button>
+                                </div>
+                            </div>
+                        </li>
+                        
+                    </ul>
+
+                    <button class="btn btn-primary">ver todos os pacotes</button>
+                </div>
+            </section>
+
+            <section class="gallery" id="gallery">
+                <div class="container">
+                    <p class="section-subtitle">Galeria de fotos</p>
+                    <h2 class="h2 section-title">Fotos de viajantes</h2>
+
+                    <p class="section-text">Imagine um mundo pintado com tons vibrantes, capturado não por lentes profissionais, mas pelos olhos de exploradores apaixonados. Navegue pela galeria e deixe sua imaginação voar.</p>
+
+                    <ul class="gallery-list">
+                        <li class="gallery-item">
+                            <figure class="gallery-image">
+                                <img src="https://i.postimg.cc/6qfpc2mw/gallery-1.jpg" alt="gallery image">
+                            </figure>
+                        </li>
+
+                        <li class="gallery-item">
+                            <figure class="gallery-image">
+                                <img src="https://i.postimg.cc/yY7ddjDN/gallery-2.jpg" alt="gallery image">
+                            </figure>
+                        </li>
+
+                        <li class="gallery-item">
+                            <figure class="gallery-image">
+                                <img src="https://i.postimg.cc/PrKq8DDQ/gallery-3.jpg" alt="gallery image">
+                            </figure>
+                        </li>
+
+                        <li class="gallery-item">
+                            <figure class="gallery-image">
+                                <img src="https://i.postimg.cc/13j5vZJg/gallery-4.jpg" alt="gallery image">
+                            </figure>
+                        </li>
+
+                        <li class="gallery-item">
+                            <figure class="gallery-image">
+                                <img src="https://i.postimg.cc/XvBNhDzs/gallery-5.jpg" alt="gallery image">
+                            </figure>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="cta" id="contact">
+                <div class="container">
+                    <div class="cta-content">
+                        <p class="section-subtitle">Faça sua reserva hoje mesmo</p>
+                        <h2 class="h2 section-title">Confira esses e muitos outros passeios futuros!</h2>
+                        <p class="section-text">Prepare-se para a aventura! Fique ligado nos próximos passeios, que prometem experiências inesquecíveis e destinos únicos.</p>
+                        
+                    </div>
+
+                    <button class="btn btn-secondary">Contate-nos</button>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-brand">
+                    <a href="#" class="logo"><img src="https://i.postimg.cc/hvcfT8PK/logo-blue.png" alt="Tourly logo"></a>
+
+                    <p class="footer-text">Seu passaporte para a aventura espera por você!</p>
+                </div>
+
+                <div class="footer-contact">
+                    <h4 class="contact-title">Contate-nos</h4>
+                    <p class="contact-text">Sinta-se à vontade para entrar em contato conosco!</p>
+
+                    <ul>
+                        <li class="contact-item">
+                            <ion-icon name="call-outline"></ion-icon>
+                            <a href="tel:+01123456790" class="contact-link">+55 (12) 12121212</a>
+                        </li>
+
+                        <li class="contact-item">
+                            <ion-icon name="mail-outline"></ion-icon>
+                            <a href="mailto:info.tourly.com" class="contact-link">info.tourly.com.br</a>
+                        </li>
+
+                        <li class="contact-item">
+                            <ion-icon name="location-outline"></ion-icon>
+                            <address>Campo Grande MS, Brasil</address>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-form">
+                    <p class="form-text">Assine nossa newsletter para mais atualizações e notícias!!</p>
+
+                    <form action="#" class="form-wrapper">
+                        <input type="email" name="email" class="input-field" placeholder="digite seu e-mail" required>
+                        <button type="submit" class="btn btn-secondary">inscrever-se</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <p class="copyright">&copy; 2025 <a href=""target="_blank"> FABIANO PENHA </a>. All rights reserved</p>
+
+                <ul class="footer-bottom-list">
+                    <li><a href="#" class="footer-bottom-link">política de Privacidade</a></li>
+                    <li><a href="#" class="footer-bottom-link">Termos e Condições</a></li>
+                    <li><a href="#" class="footer-bottom-link">Perguntas frequentes</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#top" class="go-top " data-go-top>
+        <ion-icon name="chevron-up-outline"></ion-icon>
+    </a>
+
+    <script src="main.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
