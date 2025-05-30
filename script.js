@@ -1,38 +1,54 @@
 'use strict';
 
-// Activating Overlay and Mobile Menu
-
-const overlay = document.querySelector('[data-overlay]');
-const navOpenBtn = document.querySelector('[data-nav-open-btn]');
+// Navbar Toggle
+const navToggle = document.querySelector('[data-nav-toggle]');
 const navbar = document.querySelector('[data-navbar]');
-const navCloseBtn = document.querySelector('[data-nav-close-btn]');
 const navLinks = document.querySelectorAll('[data-nav-link]');
 
-const navElemArr = [navOpenBtn, navCloseBtn, overlay];
+if (navToggle && navbar) {
+  navToggle.addEventListener('click', () => {
+    navbar.classList.toggle('active');
+  });
 
-const navToggleEvent = function (elem) {
-    for(let i = 0; i < elem.length; i++){
-        elem[i].addEventListener('click', function () {
-            navbar.classList.toggle('active');
-            overlay.classList.toggle('active');
-        })
-    }
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      navbar.classList.remove('active');
+    });
+  });
 }
 
-navToggleEvent(navElemArr);
-navToggleEvent(navLinks);
+// Scroll to Top Button
+const goTop = document.querySelector('[data-go-top]');
+if (goTop) {
+  window.addEventListener('scroll', () => {
+    goTop.classList.toggle('active', window.scrollY >= 400);
+  });
+}
 
-// Header Sticky and go top
+// Dark / Light Theme Toggle with Local Storage
+const themeToggle = document.getElementById('theme-toggle');
 
-const header = document.querySelector('[data-header]');
-const goTopBtn = document.querySelector('[data-go-top]');
+try {
+  const savedTheme = localStorage.getItem('theme');
 
-window.addEventListener('scroll', function() {
-    if(window.scrollY >= 200) {
-        header.classList.add('active');
-        goTopBtn.classList.add('active');
-    }else{
-        header.classList.remove('active');
-        goTopBtn.classList.remove('active');
-    }
-})
+  if (savedTheme === 'dark') {
+    document.body.classList.add('dark');
+    if (themeToggle) themeToggle.checked = true;
+  }
+
+  if (themeToggle) {
+    themeToggle.addEventListener('change', () => {
+      if (themeToggle.checked) {
+        document.body.classList.add('dark');
+        localStorage.setItem('theme', 'dark');
+      } else {
+        document.body.classList.remove('dark');
+        localStorage.setItem('theme', 'light');
+      }
+    });
+  }
+} catch (e) {
+  console.warn('LocalStorage não disponível ou erro:', e);
+}
+
+
